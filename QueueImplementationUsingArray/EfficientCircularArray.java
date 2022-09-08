@@ -10,7 +10,7 @@ public class EfficientCircularArray {
         array = new int[this.capacity];
     }
 
-    boolean isFull(EfficientCircularArray efficientCircularArray) {
+    public boolean isFull(EfficientCircularArray efficientCircularArray) {
         return (efficientCircularArray.size == efficientCircularArray.capacity);
     }
 
@@ -18,7 +18,7 @@ public class EfficientCircularArray {
         return (efficientCircularArray.size == 0);
     }
 
-    void enqueue(int item) {
+    public void enqueue(int item) {
         if (isFull(this))
             return;
         this.rear = (this.rear + 1)
@@ -29,7 +29,7 @@ public class EfficientCircularArray {
                 + " enqueued to queue");
     }
 
-    int dequeue() {
+    public int dequeue() {
         if (isEmpty(this))
             return Integer.MIN_VALUE;
 
@@ -40,14 +40,14 @@ public class EfficientCircularArray {
         return item;
     }
 
-    int front() {
+    public int front() {
         if (isEmpty(this))
             return Integer.MIN_VALUE;
 
         return this.array[this.front];
     }
 
-    int rear() {
+    public int rear() {
         if (isEmpty(this))
             return Integer.MIN_VALUE;
 
