@@ -1,5 +1,7 @@
 # GeeksforGeeksQueue
+
 First In First Out 
+
 Implement Queue using array
 
 Operations on Queue
