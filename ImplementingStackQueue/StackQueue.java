@@ -12,11 +12,11 @@ public class StackQueue {
 
         static int curr_size;
 
-        Stack() {
+        public Stack() {
             curr_size = 0;
         }
 
-        static void push(int x) {
+        public static void push(int x) {
             curr_size++;
 
             q2.add(x);
@@ -31,7 +31,7 @@ public class StackQueue {
             q2 = q;
         }
 
-        static void pop() {
+        public static void pop() {
 
             if (q1.isEmpty())
                 return;
@@ -39,13 +39,13 @@ public class StackQueue {
             curr_size--;
         }
 
-        static int top() {
+        public static int top() {
             if (q1.isEmpty())
                 return -1;
             return q1.peek();
         }
 
-        static int size() {
+        public static int size() {
             return curr_size;
         }
     }
